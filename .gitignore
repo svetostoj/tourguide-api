@@ -6,3 +6,4 @@ nodemon.json
 .env.test
 .env.*
 now.json
+__tests__

@@ -4,3 +4,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxN
 ###
 GET https://carsauctionhouse-api-jsiopfmjry.now.sh/cars
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNTMwMTU0NTAzfQ.pycu_-UHwwCtLHUMFWytkcAYB5sVYIFjXJ6QKKQIG58
+
+
+###
+GET http://localhost:3000/cars

@@ -1,5 +1,6 @@
 const mongoose = require('mongoose')
 
+
 const url = 'mongodb+srv://brewster-t2myt.mongodb.net/'
 const options = {
     user: 'ruegen',
@@ -8,8 +9,7 @@ const options = {
     promiseLibrary: global.Promise
 }
 
-mongoose
-    .connect(url, options)
+mongoose.connect(url, options)
     .then(() => {
         console.info(
             'mongodb db connection established'
