@@ -6,7 +6,7 @@ const cors = require('cors')
 
 const app = express()
 
-const carsRouter = require('./cars/carsRouter')
+// const carsRouter = require('./cars/carsRouter')
 const authRouter = require('./auth/authRouter')
 
 const PORT = 3000
@@ -17,7 +17,7 @@ app.use(cors({
    credentials: true 
 }))
 app.use(cookieParser())
-app.use('/cars', carsRouter)
+// app.use('/cars', carsRouter)
 app.use('/auth', authRouter)
 
 app.listen(PORT, () => {

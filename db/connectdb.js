@@ -1,11 +1,11 @@
 const mongoose = require('mongoose')
 
-
-const url = 'mongodb+srv://brewster-t2myt.mongodb.net/'
+// mongodb+srv://svetos:<PASSWORD>@cluster0-cig9q.mongodb.net/test?retryWrites=true
+const url = 'mongodb+srv://cluster0-cig9q.mongodb.net/'
 const options = {
-    user: 'ruegen',
-    pass: process.env.MONGODB_USER_PASSWORD,
-    dbName: 'brewstercars',
+    user: 'svetos',
+    pass: 'mojtemota',
+    dbName: 'tourguide_db',
     promiseLibrary: global.Promise
 }
 
