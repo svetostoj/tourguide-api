@@ -1,19 +1,23 @@
 const mongoose = require('../db/connectdb')
 const {Schema} = mongoose
 
-const carSchema = new Schema({
-       make: {
+const bookingSchema = new Schema({
+       booking: {
            type: String,
            required: true,
            index: true
        },
-       model: String,
-       floorPrice: {
+       fromto: String,
+       price: {
            type: Number,
            required: true
-       } 
+       },
+       user: {
+           type: Schema.Types.ObjectId,
+           ref: 'User'
+       }
 })
 
-const Car = mongoose.model('Cars', carSchema)
+const Booking = mongoose.model('Bookings', bookingSchema)
 
-module.exports = Car
+module.exports = Booking

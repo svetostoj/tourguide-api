@@ -1,25 +1,28 @@
-const Car = require('./Car')
+const Booking = require('./Booking')
 
-const cars = [
+const bookings = [
     {
-        make: 'Toyota',
-        model: 'Land Cruiser', 
-        floorPrice: 2000000
+        booking: 'Melbourne CBD',
+        fromto: 'Mon-Tue', 
+        price: 2000000,
+        user: '5b3ac93345a84504bb464ffa'
     },
     {
-        make: 'Jeep',
-        model: 'Wrangler', 
-        floorPrice: 1800000
+        booking: 'East Gippsland',
+        fromto: 'Wed-Thu', 
+        price: 400000,
+        user: '5b3ac93345a84504bb464ffa'
     },
     {
-        make: 'Nissan',
-        model: 'Patrol', 
-        floorPrice: 1900000
+        booking: 'French Island ',
+        fromto: 'Fri-Sat', 
+        price: 120000,
+        user: '5b3ac93345a84504bb464ffa'
     }
 ]
 
-Car.create(cars)
+Booking.create(bookings)
 .then(() => {
-    console.info(`seeded cars`)
+    console.info(`seeded bookings`)
     
 })
