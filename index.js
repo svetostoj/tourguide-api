@@ -11,13 +11,13 @@ const authRouter = require('./auth/authRouter')
 
 const PORT = 3000
 app.use(bodyParser.json())
-
-app.use(cors({
-//    origin: 'http://localhost:3001',
-   origin: '*',
-   credentials: true 
-}))
 app.use(cookieParser())
+
+const corsOptions = {
+    origin: 'http://localhost:3001',
+    credentials: true 
+ }
+app.use(cors(corsOptions))
 app.use('/bookings', bookingsRouter)
 app.use('/auth', authRouter)
 

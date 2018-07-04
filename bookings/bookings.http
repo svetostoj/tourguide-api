@@ -8,4 +8,5 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxN
 
 ###
 GET http://localhost:3000/bookings
+Cookie: access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRvdXJndWlkZUBnbWFpbC5jb20iLCJpcF9hZGRyZXNzIjoiMTI3LjAuMC4xIiwiaWF0IjoxNTMwNjczOTI1fQ.WX2xwYyYQ9QglHdoNrZhG8ElgLMSqZegwQ1BRi3LtHk; path=/; httponly
 

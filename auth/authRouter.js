@@ -20,13 +20,13 @@ router.post('/login', (req, res) => {
                 ip_address
             }
         
-            // const JWT_SECRET = process.env.JWT_SECRET
-            const JWT_SECRET = "BLABLABLA"
+            const JWT_SECRET = process.env.JWT_SECRET
             
             const token = JWT.sign(payload, JWT_SECRET)
 
             // add cookie to response
             const cookies = new Cookies(req, res)
+            // cookies.set('access_token', token)
 
             cookies.set('access_token', token, {
                 secure: false,
