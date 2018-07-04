@@ -1,10 +1,10 @@
 {
-  "name": "carsauctionhouse-api",
+  "name": "tourguide-api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "nodemon index.js",
     "seed": "node ./bookings/bookingsSeed.js",
     "dev": "nodemon index.js",
     "test": "jest"

@@ -13,7 +13,8 @@ const PORT = 3000
 app.use(bodyParser.json())
 
 app.use(cors({
-   origin: 'http://localhost:3001',
+//    origin: 'http://localhost:3001',
+   origin: '*',
    credentials: true 
 }))
 app.use(cookieParser())

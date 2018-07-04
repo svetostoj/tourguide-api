@@ -21,7 +21,7 @@ router.post('/login', (req, res) => {
             }
         
             // const JWT_SECRET = process.env.JWT_SECRET
-            const JWT_SECRET = 'BLABLABLA'
+            const JWT_SECRET = "BLABLABLA"
             
             const token = JWT.sign(payload, JWT_SECRET)
 

@@ -4,6 +4,7 @@ const {Schema} = mongoose
 const bookingSchema = new Schema({
        booking: {
            type: String,
+           unique: true,
            required: true,
            index: true
        },
