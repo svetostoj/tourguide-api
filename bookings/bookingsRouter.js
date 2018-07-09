@@ -15,7 +15,7 @@ router.get('/', (req, res) => {
     // TODO:  (replace) pull bookings from bookings Model
     
 
-    const decoded = JWT.verify(token, JWT_SECRET)
+    // const decoded = JWT.verify(token, JWT_SECRET)
     
     Booking.find()
     .then(bookings => {

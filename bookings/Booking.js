@@ -1,22 +1,22 @@
 const mongoose = require('../db/connectdb')
-const {Schema} = mongoose
+const { Schema } = mongoose
 
 const bookingSchema = new Schema({
-       booking: {
-           type: String,
-           unique: true,
-           required: true,
-           index: true
-       },
-       fromto: String,
-       price: {
-           type: Number,
-           required: true
-       },
-       user: {
-           type: Schema.Types.ObjectId,
-           ref: 'User'
-       }
+    booking: {
+        type: String,
+        unique: true,
+        required: true,
+        index: true
+    },
+    fromto: String,
+    price: {
+        type: Number,
+        required: true
+    },
+    user: {
+        type: Schema.Types.ObjectId,
+        ref: 'User'
+    }
 })
 
 const Booking = mongoose.model('Bookings', bookingSchema)

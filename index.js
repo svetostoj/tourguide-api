@@ -18,6 +18,7 @@ const corsOptions = {
     credentials: true 
  }
 app.use(cors(corsOptions))
+
 app.use('/bookings', bookingsRouter)
 app.use('/auth', authRouter)
 
